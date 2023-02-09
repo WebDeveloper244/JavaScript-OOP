@@ -11,19 +11,18 @@
    we use Dot to caught the Property in object
 */
 
-// let person = {}
-let person = new Object()
+// let person = {}  Two method of creating objects
+let person1 = new Object()
 
-person.Name = "Object",
-person.func = function(){
+person1.Name = "Object",
+person1.func = function(){
   console.log('function call');
 }
-
-person.func()
-
+person1.func();
 
 
-let Employee = {
+
+let person2 = {
   Name:'Salman',
   Age : 21,
   JOb : `Full Stack Developer`,
@@ -33,9 +32,9 @@ let Employee = {
   }
 }
 
-Employee.cast = "Baloch"
+person2.cast = "Baloch"
 
-console.log(Employee.func());
+console.log(person2.func());
 
 // What is Class??
 /*
