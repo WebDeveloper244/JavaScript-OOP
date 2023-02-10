@@ -47,11 +47,20 @@ console.log(person2.func());
     this.name = n,
     this.age = a
   }
+  hello = function(){
+   console.log('hello');
+  }
+  static good (){
+     console.log(`call static function`);
+  }
  }
 
  let human1 = new human('salman',21)
 
  human1;
+ human1.hello()
+//  staic function call with class name
+ human.good()
 
 
 
