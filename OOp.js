@@ -1,4 +1,4 @@
-// Object contain DRY method (Don't repeate your self) method Three important concept to understanding OOP concept
+// Object contain DRY method (Don't repeate your self) method Three important concept to understanding OOP concept in es6 version method auto saved in prototype
 /* 
 1 Object 
 2 Class
@@ -62,6 +62,41 @@ console.log(person2.func());
 //  staic function call with class name
  human.good()
 
+/*  
+  Inherit employee class in manager class with etends method
+*/
 
+class employee {
+  constructor(arg){
+     console.log(`${arg}`);
+  }
+}
 
+class manger extends employee{
+
+}
+
+let manger1 = new manger(`employee class`)
+console.log(manger1);
+
+/*  
+  call parent constructor in child class
+*/
+
+class employee1 {
+  constructor(n){
+    this.name = n
+  }
+}
+
+class manager extends employee1{
+constructor(empC,dep){
+  super(empC)
+  this.department = dep
+}
+}
+
+let manager1 = new manager('salman','web-development') 
+manager1;
+console.log(manager1);
  
