@@ -42,9 +42,16 @@ console.log(person2.func());
     let's try with example
 */
 
- class Employees {
-  
+ class human {
+  constructor(n,a){
+    this.name = n,
+    this.age = a
+  }
  }
+
+ let human1 = new human('salman',21)
+
+ human1;
 
 
 
