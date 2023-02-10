@@ -56,3 +56,33 @@ CarModel.prototype.model = function(){
 
 let car1 = new CarModel('Lamborghini',22000000,'Orange')
 console.log(car1.model());
+
+// Inherit prototype to other
+
+function Creature(Age){
+  this.age = Age
+}
+
+Creature.prototype.lifeAge = function(){
+console.log(23);
+}
+
+let creature1 = new Creature(100)
+
+function Animal(legs,color){
+this.Legs = legs,
+this.color = color
+}
+Animal.prototype.Name = function(){
+  console.log('Tiger');
+}
+
+
+Animal.prototype.__proto__ = Creature.prototype
+
+
+let animal1 = new Animal(4,'orange')
+
+animal1.lifeAge()
+
+
