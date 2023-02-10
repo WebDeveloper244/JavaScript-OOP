@@ -63,7 +63,7 @@ console.log(person2.func());
  human.good()
 
 /*  
-  Inherit employee class in manager class with etends method
+  Inherit employee class in manager class with etends keyword
 */
 
 class employee {
@@ -80,12 +80,15 @@ let manger1 = new manger(`employee class`)
 console.log(manger1);
 
 /*  
-  call parent constructor in child class
+  call parent constructor in child class with super keyword
 */
 
 class employee1 {
   constructor(n){
     this.name = n
+  }
+  hello(){
+     console.log(`hi`);
   }
 }
 
@@ -94,9 +97,14 @@ constructor(empC,dep){
   super(empC)
   this.department = dep
 }
+info(){
+    return ` Name is ${this.name} and department is ${this.department}`
+}
 }
 
 let manager1 = new manager('salman','web-development') 
 manager1;
 console.log(manager1);
+manager1.hello();
+console.log(manager1.info());
  
