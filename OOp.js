@@ -98,6 +98,7 @@ constructor(empC,dep){
   this.department = dep
 }
 info(){
+  super.hello()
     return ` Name is ${this.name} and department is ${this.department}`
 }
 }
